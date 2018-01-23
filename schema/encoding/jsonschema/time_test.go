@@ -5,7 +5,7 @@ package jsonschema_test
 import (
 	"testing"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 func TestTimeValidatorEncode(t *testing.T) {

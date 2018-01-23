@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/rs/rest-layer/schema"
-	"github.com/rs/rest-layer/schema/query"
+	"github.com/andersonveiga/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema/query"
 	"github.com/stretchr/testify/assert"
 )
 

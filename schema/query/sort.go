@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 type Sort []SortField

@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 const (

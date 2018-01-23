@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 func TestDictCompile(t *testing.T) {

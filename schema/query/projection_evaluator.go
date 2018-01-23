@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 // Resource represents type that can be queried by Projection.Eval.

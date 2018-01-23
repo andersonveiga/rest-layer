@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/schema/query"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/schema/query"
 )
 
 // RouteMatch represent a REST request's matched resource with the method to

@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/schema/query"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/schema/query"
 )
 
 // MemoryHandler is an example handler storing data in memory

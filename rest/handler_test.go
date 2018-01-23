@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/rs/rest-layer-mem"
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/schema"
 	"github.com/stretchr/testify/assert"
 )
 

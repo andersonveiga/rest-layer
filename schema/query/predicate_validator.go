@@ -3,7 +3,7 @@ package query
 import (
 	"fmt"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 func validateExpressions(exps []Expression, validator schema.Validator) error {

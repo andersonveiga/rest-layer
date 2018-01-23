@@ -3,7 +3,7 @@ package jsonschema
 import (
 	"math"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 type floatBuilder schema.Float

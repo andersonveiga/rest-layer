@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rs/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/resource"
 )
 
 // ResponseFormatter defines an interface responsible for formatting a the

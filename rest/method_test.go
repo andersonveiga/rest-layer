@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/rest"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/rest"
 	"github.com/stretchr/testify/assert"
 )
 

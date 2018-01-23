@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/schema/query"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/schema/query"
 )
 
 // itemPatch handles PATCH resquests on an item URL.

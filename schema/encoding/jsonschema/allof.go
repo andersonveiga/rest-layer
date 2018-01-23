@@ -3,7 +3,7 @@ package jsonschema
 import (
 	"errors"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 type allOfBuilder schema.AllOf

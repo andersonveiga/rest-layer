@@ -9,7 +9,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 type resource struct {

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/rs/rest-layer/schema"
-	"github.com/rs/rest-layer/schema/encoding/jsonschema"
+	"github.com/andersonveiga/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema/encoding/jsonschema"
 )
 
 func ExampleEncoder() {

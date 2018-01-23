@@ -1,6 +1,6 @@
 package jsonschema
 
-import "github.com/rs/rest-layer/schema"
+import "github.com/andersonveiga/rest-layer/schema"
 
 type passwordBuilder schema.Password
 

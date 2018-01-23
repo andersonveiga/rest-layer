@@ -35,7 +35,7 @@ REST Layer is composed of several sub-packages:
  - resource: Defines resources, manages the resource graph and manages the
    interface with resource storage handler.
 
-See https://github.com/rs/rest-layer/blob/master/README.md for full REST Layer
+See https://github.com/andersonveiga/rest-layer/blob/master/README.md for full REST Layer
 documentation.
 */
 package restlayer

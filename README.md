@@ -21,10 +21,10 @@ The REST Layer framework is composed of several sub-packages:
 
 | Package                                                         | Coverage                                                                                                                                       | Description
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------
-| [rest](https://godoc.org/github.com/rs/rest-layer/rest)         | [![Coverage](https://gocover.io/_badge/github.com/rs/rest-layer/rest)](https://gocover.io/github.com/rs/rest-layer/rest) | A `net/http` handler to expose a REST-ful API.
-| [graphql](https://godoc.org/github.com/rs/rest-layer/graphql)   | [![Coverage](https://gocover.io/_badge/github.com/rs/rest-layer/graphql)](https://gocover.io/github.com/rs/rest-layer/graphql)              | A `net/http` handler to expose your API using the GraphQL protocol.
-| [schema](https://godoc.org/github.com/rs/rest-layer/schema)     | [![Coverage](https://gocover.io/_badge/github.com/rs/rest-layer/schema)](https://gocover.io/github.com/rs/rest-layer/schema)               | A validation framework for the API resources.
-| [resource](https://godoc.org/github.com/rs/rest-layer/resource) | [![Coverage](https://gocover.io/_badge/github.com/rs/rest-layer/resource)](https://gocover.io/github.com/rs/rest-layer/resource)             | Defines resources, manages the resource graph and manages the interface with resource storage handler.
+| [rest](https://godoc.org/github.com/andersonveiga/rest-layer/rest)         | [![Coverage](https://gocover.io/_badge/github.com/andersonveiga/rest-layer/rest)](https://gocover.io/github.com/andersonveiga/rest-layer/rest) | A `net/http` handler to expose a REST-ful API.
+| [graphql](https://godoc.org/github.com/andersonveiga/rest-layer/graphql)   | [![Coverage](https://gocover.io/_badge/github.com/andersonveiga/rest-layer/graphql)](https://gocover.io/github.com/andersonveiga/rest-layer/graphql)              | A `net/http` handler to expose your API using the GraphQL protocol.
+| [schema](https://godoc.org/github.com/andersonveiga/rest-layer/schema)     | [![Coverage](https://gocover.io/_badge/github.com/andersonveiga/rest-layer/schema)](https://gocover.io/github.com/andersonveiga/rest-layer/schema)               | A validation framework for the API resources.
+| [resource](https://godoc.org/github.com/andersonveiga/rest-layer/resource) | [![Coverage](https://gocover.io/_badge/github.com/andersonveiga/rest-layer/resource)](https://gocover.io/github.com/andersonveiga/rest-layer/resource)             | Defines resources, manages the resource graph and manages the interface with resource storage handler.
 
 # Documentation
 
@@ -147,9 +147,9 @@ import (
 	"net/http"
 
 	"github.com/rs/rest-layer-mem"
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/rest"
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/rest"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 var (
@@ -284,7 +284,7 @@ func main() {
 }
 ```
 
-Just run this code (or use the provided [examples/demo](https://github.com/rs/rest-layer/blob/master/examples/demo/main.go)):
+Just run this code (or use the provided [examples/demo](https://github.com/andersonveiga/rest-layer/blob/master/examples/demo/main.go)):
 
 	> go run examples/demo/main.go
 	2015/07/27 20:54:55 Serving API on http://localhost:8080
@@ -510,7 +510,7 @@ For REST Layer to be able to expose resources, you have to first define what fie
 
 ### Schema
 
-Resource field configuration is performed through the [schema](https://godoc.org/github.com/rs/rest-layer/schema) package. A schema is a struct describing a resource. A schema is composed of metadata about the resource and a description of the allowed fields through a map of field name pointing to field definition.
+Resource field configuration is performed through the [schema](https://godoc.org/github.com/andersonveiga/rest-layer/schema) package. A schema is a struct describing a resource. A schema is composed of metadata about the resource and a description of the allowed fields through a map of field name pointing to field definition.
 
 Sample resource schema:
 
@@ -575,20 +575,20 @@ REST Layer comes with a set of validators. You can add your own by implementing 
 | [schema.AnyOf][any]     | Ensures that at least one sub-validator is valid
 | [schema.AllOf][all]     | Ensures that at least all sub-validators are valid
 
-[str]:    https://godoc.org/github.com/rs/rest-layer/schema#String
-[int]:    https://godoc.org/github.com/rs/rest-layer/schema#Integer
-[float]:  https://godoc.org/github.com/rs/rest-layer/schema#Float
-[bool]:   https://godoc.org/github.com/rs/rest-layer/schema#Bool
-[array]:  https://godoc.org/github.com/rs/rest-layer/schema#Array
-[dict]:   https://godoc.org/github.com/rs/rest-layer/schema#Dict
-[object]: https://godoc.org/github.com/rs/rest-layer/schema#Object
-[time]:   https://godoc.org/github.com/rs/rest-layer/schema#Time
-[url]:    https://godoc.org/github.com/rs/rest-layer/schema#URL
-[ip]:     https://godoc.org/github.com/rs/rest-layer/schema#IP
-[pswd]:   https://godoc.org/github.com/rs/rest-layer/schema#Password
-[ref]:    https://godoc.org/github.com/rs/rest-layer/schema#Reference
-[any]:    https://godoc.org/github.com/rs/rest-layer/schema#AnyOf
-[all]:    https://godoc.org/github.com/rs/rest-layer/schema#AllOf
+[str]:    https://godoc.org/github.com/andersonveiga/rest-layer/schema#String
+[int]:    https://godoc.org/github.com/andersonveiga/rest-layer/schema#Integer
+[float]:  https://godoc.org/github.com/andersonveiga/rest-layer/schema#Float
+[bool]:   https://godoc.org/github.com/andersonveiga/rest-layer/schema#Bool
+[array]:  https://godoc.org/github.com/andersonveiga/rest-layer/schema#Array
+[dict]:   https://godoc.org/github.com/andersonveiga/rest-layer/schema#Dict
+[object]: https://godoc.org/github.com/andersonveiga/rest-layer/schema#Object
+[time]:   https://godoc.org/github.com/andersonveiga/rest-layer/schema#Time
+[url]:    https://godoc.org/github.com/andersonveiga/rest-layer/schema#URL
+[ip]:     https://godoc.org/github.com/andersonveiga/rest-layer/schema#IP
+[pswd]:   https://godoc.org/github.com/andersonveiga/rest-layer/schema#Password
+[ref]:    https://godoc.org/github.com/andersonveiga/rest-layer/schema#Reference
+[any]:    https://godoc.org/github.com/andersonveiga/rest-layer/schema#AnyOf
+[all]:    https://godoc.org/github.com/andersonveiga/rest-layer/schema#AllOf
 
 Some common hook handler to be used with `OnInit` and `OnUpdate` are also provided:
 
@@ -650,7 +650,7 @@ post = schema.Schema{
 
 ### Binding
 
-Now you just need to bind this schema at a specific endpoint on the [resource.Index](https://godoc.org/github.com/rs/rest-layer/resource#Index) object:
+Now you just need to bind this schema at a specific endpoint on the [resource.Index](https://godoc.org/github.com/andersonveiga/rest-layer/resource#Index) object:
 
 ```go
 index := resource.NewIndex()
@@ -659,7 +659,7 @@ posts := index.Bind("posts", post, mem.NewHandler(), resource.DefaultConf)
 
 This tells the `resource.Index` to bind the `post` schema at the `posts` endpoint. The resource collection URL is then `/posts` and item URLs are `/posts/<post_id>`.
 
-The [resource.DefaultConf](https://godoc.org/github.com/rs/rest-layer/resource#pkg-variables) variable is a pre-defined [resource.Conf](https://godoc.org/github.com/rs/rest-layer/resource#Conf) type with sensible default. You can customize the resource behavior using a custom configuration.
+The [resource.DefaultConf](https://godoc.org/github.com/andersonveiga/rest-layer/resource#pkg-variables) variable is a pre-defined [resource.Conf](https://godoc.org/github.com/andersonveiga/rest-layer/resource#Conf) type with sensible default. You can customize the resource behavior using a custom configuration.
 
 The `resource.Conf` type has the following customizable properties:
 
@@ -701,7 +701,7 @@ Note on GraphQL support and modes: current implementation of GraphQL doesn't sup
 
 ### Hooks
 
-Hooks are piece of code you can attach before or after an operation is performed on a resource. A hook is a Go type implementing one of the event handler interface below, and attached to a resource via the [Resource.Use](https://godoc.org/github.com/rs/rest-layer/resource#Resource.Use) method.
+Hooks are piece of code you can attach before or after an operation is performed on a resource. A hook is a Go type implementing one of the event handler interface below, and attached to a resource via the [Resource.Use](https://godoc.org/github.com/andersonveiga/rest-layer/resource#Resource.Use) method.
 
 | Hook Interface         | Description
 | ---------------------- | -------------
@@ -718,22 +718,22 @@ Hooks are piece of code you can attach before or after an operation is performed
 | [ClearEventHandler]    | Defines a function called before a resource is cleared.
 | [ClearedEventHandler]  | Defines a function called after a resource has been cleared.
 
-[FindEventHandler]:     https://godoc.org/github.com/rs/rest-layer/resource#FindEventHandler
-[FoundEventHandler]:    https://godoc.org/github.com/rs/rest-layer/resource#FoundEventHandler
-[GetEventHandler]:      https://godoc.org/github.com/rs/rest-layer/resource#GetEventHandler
-[GotEventHandler]:      https://godoc.org/github.com/rs/rest-layer/resource#GotEventHandler
-[InsertEventHandler]:   https://godoc.org/github.com/rs/rest-layer/resource#InsertEventHandler
-[InsertedEventHandler]: https://godoc.org/github.com/rs/rest-layer/resource#InsertedEventHandler
-[UpdateEventHandler]:   https://godoc.org/github.com/rs/rest-layer/resource#UpdateEventHandler
-[UpdatedEventHandler]:  https://godoc.org/github.com/rs/rest-layer/resource#UpdatedEventHandler
-[DeleteEventHandler]:   https://godoc.org/github.com/rs/rest-layer/resource#DeleteEventHandler
-[DeletedEventHandler]:  https://godoc.org/github.com/rs/rest-layer/resource#DeletedEventHandler
-[ClearEventHandler]:    https://godoc.org/github.com/rs/rest-layer/resource#ClearEventHandler
-[ClearedEventHandler]:  https://godoc.org/github.com/rs/rest-layer/resource#ClearedEventHandler
+[FindEventHandler]:     https://godoc.org/github.com/andersonveiga/rest-layer/resource#FindEventHandler
+[FoundEventHandler]:    https://godoc.org/github.com/andersonveiga/rest-layer/resource#FoundEventHandler
+[GetEventHandler]:      https://godoc.org/github.com/andersonveiga/rest-layer/resource#GetEventHandler
+[GotEventHandler]:      https://godoc.org/github.com/andersonveiga/rest-layer/resource#GotEventHandler
+[InsertEventHandler]:   https://godoc.org/github.com/andersonveiga/rest-layer/resource#InsertEventHandler
+[InsertedEventHandler]: https://godoc.org/github.com/andersonveiga/rest-layer/resource#InsertedEventHandler
+[UpdateEventHandler]:   https://godoc.org/github.com/andersonveiga/rest-layer/resource#UpdateEventHandler
+[UpdatedEventHandler]:  https://godoc.org/github.com/andersonveiga/rest-layer/resource#UpdatedEventHandler
+[DeleteEventHandler]:   https://godoc.org/github.com/andersonveiga/rest-layer/resource#DeleteEventHandler
+[DeletedEventHandler]:  https://godoc.org/github.com/andersonveiga/rest-layer/resource#DeletedEventHandler
+[ClearEventHandler]:    https://godoc.org/github.com/andersonveiga/rest-layer/resource#ClearEventHandler
+[ClearedEventHandler]:  https://godoc.org/github.com/andersonveiga/rest-layer/resource#ClearedEventHandler
 
 All hooks functions get a `context.Context` as first argument. If a network call must be performed from the hook, the context's deadline must be respected. If a hook return an error, the whole request is aborted with that error.
 
-You can also use the context to pass data to your hooks from a middleware executed before REST Layer. This can be used to manage authentication for instance. See [examples/auth](https://github.com/rs/rest-layer/blob/master/examples/auth/main.go) to see an example.
+You can also use the context to pass data to your hooks from a middleware executed before REST Layer. This can be used to manage authentication for instance. See [examples/auth](https://github.com/andersonveiga/rest-layer/blob/master/examples/auth/main.go) to see an example.
 
 ### Sub Resources
 
@@ -783,7 +783,7 @@ See [embedding](#embedding) for more information.
 
 ### Dependency
 
-Fields can depends on other fields in order to be changed. To configure dependency, set a filter on the `Dependency` property of the field using the [schema.MustParse()](https://godoc.org/github.com/rs/rest-layer/schema#Q) method.
+Fields can depends on other fields in order to be changed. To configure dependency, set a filter on the `Dependency` property of the field using the [schema.MustParse()](https://godoc.org/github.com/andersonveiga/rest-layer/schema#Q) method.
 
 In this example, the `body` field can't be changed if the `published` field is not set to `true`:
 
@@ -1077,7 +1077,7 @@ REST Layer doesn't provide any kind of support for authentication. Identifying t
 
 In this schema, the authentication service identify the user and store data relevant to the user's identification in a JWT token. This token is sent to the API client as a [bearer token](https://tools.ietf.org/html/rfc6750), thru for instance the `access-token` query-string parameter or the `Authorization` HTTP header. A http middleware then decode and verify this token and extract user info from it, and stores it into the context. In REST layer, user info is now accessible from your [resource hooks](#hooks) so you can change the query lookup or ensure mutated objects are owned by the user in order to handle the authorization part.
 
-See the [JWT auth example](https://github.com/rs/rest-layer/blob/master/examples/auth-jwt/main.go) for more info.
+See the [JWT auth example](https://github.com/andersonveiga/rest-layer/blob/master/examples/auth-jwt/main.go) for more info.
 
 ## Conditional Requests
 
@@ -1153,7 +1153,7 @@ In the example above, the document did not validate so the request has been reje
 
 ### Nullable Values
 
-To allow `null` value in addition the field type, you can use [schema.AnyOf](https://godoc.org/github.com/rs/rest-layer/schema#AnyOf) validator:
+To allow `null` value in addition the field type, you can use [schema.AnyOf](https://godoc.org/github.com/andersonveiga/rest-layer/schema#AnyOf) validator:
 
 ```go
 "nullable_field": {
@@ -1166,7 +1166,7 @@ To allow `null` value in addition the field type, you can use [schema.AnyOf](htt
 
 ### Extensible Data Validation
 
-It is very easy to add new validators. You just need to implement the [schema.FieldValidator](https://godoc.org/github.com/rs/rest-layer/schema#FieldValidator):
+It is very easy to add new validators. You just need to implement the [schema.FieldValidator](https://godoc.org/github.com/andersonveiga/rest-layer/schema#FieldValidator):
 
 ```go
 type FieldValidator interface {
@@ -1176,7 +1176,7 @@ type FieldValidator interface {
 
 The `Validate` method takes the value as argument and must either return the value back with some eventual transformation or an `error` if the validation failed.
 
-Your validator may also implement the optional [schema.Compiler](https://godoc.org/github.com/rs/rest-layer/schema#Compiler) interface:
+Your validator may also implement the optional [schema.Compiler](https://godoc.org/github.com/andersonveiga/rest-layer/schema#Compiler) interface:
 
 ```go
 type Compiler interface {
@@ -1186,7 +1186,7 @@ type Compiler interface {
 
 When a field validator implements this interface, the `Compile` method is called at the server initialization. It's a good place to pre-compute some data (i.e.: compile regexp) and verify validator configuration. If validator configuration contains issue, the `Compile` method must return an error, so the initialization of the resource will generate un fatal error.
 
-Last but not least, a validator may implement some advanced serialization or transformation of the data to optimize it's storage. In order to read this data back and put it in a format suitable for JSON representation, a validator can implement the [schema.FieldSerializer](https://godoc.org/github.com/rs/rest-layer/schema#FieldSerializer) interface:
+Last but not least, a validator may implement some advanced serialization or transformation of the data to optimize it's storage. In order to read this data back and put it in a format suitable for JSON representation, a validator can implement the [schema.FieldSerializer](https://godoc.org/github.com/andersonveiga/rest-layer/schema#FieldSerializer) interface:
 
 ```go
 type FieldSerializer interface {
@@ -1196,7 +1196,7 @@ type FieldSerializer interface {
 
 When a validator implements this interface, the method is called with the field's value just before JSON marshaling. You should return an error if the format stored in the db is invalid and can't be converted back into a suitable representation.
 
-See [schema.IP](https://godoc.org/github.com/rs/rest-layer/schema#IP) validator for an implementation example.
+See [schema.IP](https://godoc.org/github.com/andersonveiga/rest-layer/schema#IP) validator for an implementation example.
 
 ## Timeout and Request Cancellation
 
@@ -1257,8 +1257,8 @@ import (
 	"net/http"
 
 	"github.com/rs/cors"
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/rest"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/rest"
 )
 
 func main() {
@@ -1292,8 +1292,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/rs/rest-layer/resource"
-	"github.com/rs/rest-layer/rest"
+	"github.com/andersonveiga/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/rest"
 )
 
 func main() {
@@ -1325,7 +1325,7 @@ func main() {
 
 REST Layer doesn't handle storage of resources directly. A [mem.MemoryHandler](https://godoc.org/github.com/rs/rest-layer-mem#MemoryHandler) is provided as an example but should be used for testing only.
 
-A resource storage handler is easy to write though. Some handlers for [popular databases are available](#storage-handlers), but you may want to write your own to put an API in front of anything you want. It is very easy to write a data storage handler, you just need to implement the [resource.Storer](https://godoc.org/github.com/rs/rest-layer/resource#Storer) interface:
+A resource storage handler is easy to write though. Some handlers for [popular databases are available](#storage-handlers), but you may want to write your own to put an API in front of anything you want. It is very easy to write a data storage handler, you just need to implement the [resource.Storer](https://godoc.org/github.com/andersonveiga/rest-layer/resource#Storer) interface:
 
 ```go
 type Storer interface {
@@ -1337,17 +1337,17 @@ type Storer interface {
 }
 ```
 
-Mutation methods like `Update` and `Delete` must ensure they are atomically mutating the same item as specified in argument by checking their `ETag` (the stored `ETag` must match the `ETag` of the provided item). In case the handler can't guarantee that, the storage must be left untouched, and a [resource.ErrConflict](https://godoc.org/github.com/rs/rest-layer/resource#pkg-variables) must be returned.
+Mutation methods like `Update` and `Delete` must ensure they are atomically mutating the same item as specified in argument by checking their `ETag` (the stored `ETag` must match the `ETag` of the provided item). In case the handler can't guarantee that, the storage must be left untouched, and a [resource.ErrConflict](https://godoc.org/github.com/andersonveiga/rest-layer/resource#pkg-variables) must be returned.
 
 If the operation is not immediate, the method must listen for cancellation on the passed `ctx`. If the operation is stopped due to context cancellation, the function must return the result of the [ctx.Err()](https://godoc.org/golang.org/x/net/context#Context) method. See [this blog post](https://blog.golang.org/context) for more information about how `context` works.
 
-If the backend storage is able to efficiently fetch multiple document by their id, it can implement the optional [resource.MultiGetter](https://godoc.org/github.com/rs/rest-layer/resource#MultiGetter) interface. REST Layer will automatically use it whenever possible.
+If the backend storage is able to efficiently fetch multiple document by their id, it can implement the optional [resource.MultiGetter](https://godoc.org/github.com/andersonveiga/rest-layer/resource#MultiGetter) interface. REST Layer will automatically use it whenever possible.
 
-See [resource.Storer](https://godoc.org/github.com/rs/rest-layer/resource#Storer) documentation for more information on resource storage handler implementation details.
+See [resource.Storer](https://godoc.org/github.com/andersonveiga/rest-layer/resource#Storer) documentation for more information on resource storage handler implementation details.
 
 ## Custom Response Formatter / Sender
 
-REST Layer let you extend or replace the default response formatter and sender. To write a new response format, you need to implement the [rest.ResponseFormatter](https://godoc.org/github.com/rs/rest-layer/rest#ResponseFormatter) interface:
+REST Layer let you extend or replace the default response formatter and sender. To write a new response format, you need to implement the [rest.ResponseFormatter](https://godoc.org/github.com/andersonveiga/rest-layer/rest#ResponseFormatter) interface:
 
 ```go
 // ResponseFormatter defines an interface responsible for formatting a the different types of response objects
@@ -1380,7 +1380,7 @@ api.ResponseFormatter = &myResponseFormatter{}
 api.ResponseSender = &myResponseSender{}
 ```
 
-You may also extend the [DefaultResponseFormatter](https://godoc.org/github.com/rs/rest-layer/rest#DefaultResponseFormatter) and/or [DefaultResponseSender](https://godoc.org/github.com/rs/rest-layer/rest#DefaultResponseSender) if you just want to wrap or slightly modify the default behavior:
+You may also extend the [DefaultResponseFormatter](https://godoc.org/github.com/andersonveiga/rest-layer/rest#DefaultResponseFormatter) and/or [DefaultResponseSender](https://godoc.org/github.com/andersonveiga/rest-layer/rest#DefaultResponseSender) if you just want to wrap or slightly modify the default behavior:
 
 ```go
 type myResponseFormatter struct {
@@ -1402,7 +1402,7 @@ func (r myResponseFormatter) FormatList(ctx context.Context, headers http.Header
 
 ## GraphQL
 
-In parallel with the REST API handler, REST Layer is also able to handle GraphQL queries (mutation will come later). GraphQL is a query language created by Facebook which provides a common interface to fetch and manipulate data. REST Layer's GraphQL handler is able to read a [resource.Index](https://godoc.org/github.com/rs/rest-layer/resource#Index) and create a corresponding GraphQL schema.
+In parallel with the REST API handler, REST Layer is also able to handle GraphQL queries (mutation will come later). GraphQL is a query language created by Facebook which provides a common interface to fetch and manipulate data. REST Layer's GraphQL handler is able to read a [resource.Index](https://godoc.org/github.com/andersonveiga/rest-layer/resource#Index) and create a corresponding GraphQL schema.
 
 GraphQL doesn't expose resources directly, but queries. REST Layer take all the resources defined at the root of the `resource.Index` and create two GraphQL queries for each one. One query is just the name of the endpoint, so `/users` would result in `users` and another is the name of the endpoint suffixed with `List`, as `usersList`. The item queries takes an `id` parameter and the list queries take `skip`, `page`, `limit`, `filter` and `sort` parameters. All sub-resources are accessible using GraphQL sub-selection syntax.
 
@@ -1445,7 +1445,7 @@ When wrapped this way, one Hystrix command is created per storage handler action
 
 Once enabled, you must configure Hystrix for each command and start the Hystrix metrics stream handler.
 
-See [Hystrix godoc](https://godoc.org/github.com/afex/hystrix-go/hystrix) for more info and [examples/hystrix](https://github.com/rs/rest-layer/blob/master/examples/hystrix/main.go) for a complete usage example with REST layer.
+See [Hystrix godoc](https://godoc.org/github.com/afex/hystrix-go/hystrix) for more info and [examples/hystrix](https://github.com/andersonveiga/rest-layer/blob/master/examples/hystrix/main.go) for a complete usage example with REST layer.
 
 ## JSONSchema
 
@@ -1454,7 +1454,7 @@ It is possible to convert a schema to [JSON Schema](http://json-schema.org/) wit
 Example usage:
 
 ```go
-import "github.com/rs/rest-layer/schema/jsonschema"
+import "github.com/andersonveiga/rest-layer/schema/jsonschema"
 
 b := new(bytes.Buffer)
 enc := jsonschema.NewEncoder(b)
@@ -1500,7 +1500,7 @@ func (e Email) BuildJSONSchema() (map[string]interface{}, error) {
 
 ### Sub-schema Limitation
 
-Sub-schemas only get converted to JSON Schema, if you specify a sub-schema via setting a Field's `Validator` attribute to a `schema.Object` instance. Use of the Field's `Schema` field is _not_ supported. Instead we hope [#77](https://github.com/rs/rest-layer/issues/77) will be implemented.
+Sub-schemas only get converted to JSON Schema, if you specify a sub-schema via setting a Field's `Validator` attribute to a `schema.Object` instance. Use of the Field's `Schema` field is _not_ supported. Instead we hope [#77](https://github.com/andersonveiga/rest-layer/issues/77) will be implemented.
 
 ### schema.Dict Limitations
 
@@ -1512,7 +1512,7 @@ The limitation in `KeysValidator` values arise because JSON Schema draft 4 (and 
 
 The support for `schema.Reference` is purely provisional, and simply returns an empty object `{}`, meaning it does not give any hint as to which validation the server might use.
 
-With a potential later implantation of the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) (a.k.a. the Swagger 2.0 Specification), the goal is to refer to the ID field of the linked resource via an object `{"$ref": "#/definitions/<unique schema title>/id"}`. This is tracked via issue [#36](https://github.com/rs/rest-layer/issues/36).
+With a potential later implantation of the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) (a.k.a. the Swagger 2.0 Specification), the goal is to refer to the ID field of the linked resource via an object `{"$ref": "#/definitions/<unique schema title>/id"}`. This is tracked via issue [#36](https://github.com/andersonveiga/rest-layer/issues/36).
 
 ### schema.URL Limitations
 
@@ -1522,4 +1522,4 @@ Note that JSON Schema draft 5 adds [uriref](https://tools.ietf.org/html/draft-wr
 
 ## Licenses
 
-All source code is licensed under the [MIT License](https://raw.github.com/rs/rest-layer/master/LICENSE).
+All source code is licensed under the [MIT License](https://raw.github.com/andersonveiga/rest-layer/master/LICENSE).

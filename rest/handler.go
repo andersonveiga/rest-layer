@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/rs/rest-layer/resource"
+	"github.com/andersonveiga/rest-layer/resource"
 )
 
 // Handler is a net/http compatible handler used to serve the configured REST

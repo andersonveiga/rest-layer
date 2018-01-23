@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sort"
 
-	"github.com/rs/rest-layer/schema"
+	"github.com/andersonveiga/rest-layer/schema"
 )
 
 var (
