@@ -31,5 +31,5 @@ func itemDelete(ctx context.Context, r *http.Request, route *RouteMatch) (status
 		e = NewError(err)
 		return e.Code, nil, e
 	}
-	return 204, nil, nil
+	return 200, nil, original
 }
